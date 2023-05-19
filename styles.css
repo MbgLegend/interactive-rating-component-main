@@ -1,0 +1,122 @@
+/* - White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+- Orange: hsl(25, 97%, 53%) */
+
+:root {
+    --overpass: 'Overpass', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4rem;
+    background-color: #141519;
+    font-family: var(--overpass);
+}
+.Canvas {
+    background: #171e28;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 25rem;
+}
+.Canvas .row {
+    padding: 1.75rem 1.85rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+}
+.Canvas .row .star-image {
+    width: 100%;
+    max-width: 50px;
+    padding: 0.915rem;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.Canvas .row h1 {
+    color: #fff;
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+.Canvas .row p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+.Canvas .row .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+.Canvas .row .flex .btn {
+    padding: 0.9rem 1.25rem;
+    border-radius: 50%;
+    font-size: 1.075rem;
+    border: none;
+    background-color:hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    font-size: 1.065rem;
+    cursor: pointer;
+}
+.Canvas .row .flex .btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.Canvas .row .flex .btn.active {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+.Canvas .row .submit-btn {
+    background-color: hsl(25, 97%, 53%);
+    padding: 0.85rem 0.9rem 0.625rem;
+    font-size: 0.9rem;
+    font-family: var(--overpass);
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: none;
+    border-radius: 1.7rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+.Canvas .row .submit-btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%) ;
+}
+.Canvas .thank-you {
+    text-align: center;
+    row-gap: 1rem;
+    padding: 2.1rem;
+}
+.Canvas .thank-you h2 {
+    color: hsl(25, 97%, 53%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    background-color: hsl(213, 19%, 18%);
+    padding: 0.35rem 1rem;
+    border-radius: 1.05rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+.Canvas .row.hide {
+    display: none;
+}
